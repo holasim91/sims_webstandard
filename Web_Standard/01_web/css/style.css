@@ -23,13 +23,10 @@
     background: url(../img/header_bg.jpg) center top repeat-x; /*x축 방향으로 반복*/
 }
 #contents{}
-#footer{
-    height: 200px;
-    background: #333;
-}
+#footer{ border-top: 1px solid #eee;}
 
 /* 컨텐츠 레이아웃 */
-#content_nav{background-color: #f6fdff;}
+#content_nav{background-color: #f6fdff; display: none;}
 #content_tit{background-color: #EAF7FD;}
 #content_ban{background-color: #dceff7;}
 #content_cont{background-color: #f6fdff;}
@@ -40,7 +37,6 @@
     width: 990px;
     height: inherit;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.3);
     
 }
 
@@ -228,7 +224,7 @@
 .gallery .gallery_img img{width: 100%;}
 
 /* 로그인 */
-#login_form{background: #f2f4f5; padding: 15px; } 
+#login_wrap{margin-bottom: 15px; background: #f2f4f5; padding: 15px; } 
 .login_header{overflow: hidden; font-size: 12px; height: 30px;}
 .login_header .lh_check{float: left; padding-right: 15px;}
 .login_header .lh_ip{float: left;}
@@ -236,7 +232,20 @@
 .login_content{position: relative;}
 .login_content .lc_btn{position: absolute; right: 0; top: 0; width: 62px; height: 47px; background: #ffffff; border: 1px solid #bebebe;}
 .login_content .input_text{width: 182px; height: 16px; padding: 2px 5px; border: 1px solid #bebebe; margin-bottom: 3px; background: #ffffff;}
-
-.login_footer{}
 .login_footer li{display: inline;}
 .login_footer li a{font-size: 12px;}
+
+/* 팝업 */
+.popup h4{font-size: 14px; color:#0093bd; padding-bottom: 4px; font-weight: 700;}
+.popup ul{overflow: hidden;}
+.popup li{float: left; width: 93px; margin-right: 5px;}
+.popup li.last{margin-right: 0;}
+.popup li img{width:100%;}
+
+/* 푸터 */
+.footer{padding: 25px 0; text-align: center;}
+.footer ul{padding-bottom: 20px;}
+.footer li{position: relative; display: inline; padding: 0 7px 0 10px;}
+.footer li:before{content: ''; width: 1px; height: 12px; background: #cccccc; position: absolute; left: 0; top: 2px;}
+.footer li:first-child::before{width: 0; height: 0;}
+.footer .w3c{margin-top: 15px;}
