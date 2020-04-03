@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout07</title>
+    <style>
+        #wrap{width: 1200px; margin: 0 auto;}
+        header{width: 100%; height: 100px; background: #f3e5f5;}
+        nav{overflow: hidden; width: 100%; height: 400px; background: #e1bee7;}
+        aside{float: left; width: 30%; height: 500px; background: #ce93d8;}
+        .section1{float: left; width: 70%; height: 250px; background: #ba68c8;}
+        .section2{ float: left; width: 70%; height: 250px; background: #ab47bc;} 
+        .article1{float: left; width: 33%; height: 300px; background: #9c27b0;}
+        .article2{float: left; width: 34%; height: 300px; background: #8e24aa;}
+        .article3{float: left; width: 33%; height: 300px; background: #7b1fa2;}
+        .article4{background: #6a1b9a; overflow: hidden; padding: 5%;}
+        .article4 > div{float: left; width: 23%; float: left; height: 200px; background: #4a148c ; margin: 1%; border-radius: 5px;}
+        footer{width: 100%; height: 100px; background: #ea80fc;}
+
+        /* 화면 너비 0 - 1200px */
+        @media(max-width: 1220px){
+        #wrap{width: 100%;}
+        .article1{width: 50%;}
+        .article2{width: 50%;}
+        .article3{display: none;}
+        .article4>div{margin: 5%;}
+        .article4>div:nth-child(4n){display: none; margin: 5%;}
+        }
+        /* 화면 너비 0 - 768px */
+        @media(max-width: 768px){
+            .article1{width: 100%;}
+            .article2{width: 100%;}
+            .article4>div{height: 150px;}
+
+        }    
+        /* 화면 너비 0 - 425 */
+        @media(max-width: 425px){
+            aside{width: 100%;}
+            .section1{width: 100%;}
+            .section2{width: 100%;}
+            .article4>div{width: 90%;}
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>Header</header>
+        <nav>Nav</nav>
+        <aside>Aside</aside>
+        <section class='section1'>section1</section>
+        <section class='section2'>section2</section>
+        <article class='article1'>article1</article>
+        <article class='article2'>article2</article>
+        <article class='article3'>article3</article>
+        <article class='article4'>
+            <div>div1</div>
+            <div>div2</div>
+            <div>div3</div>
+            <div>div4</div>
+        </article>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

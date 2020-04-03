@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout05</title>
+    <style>
+        #wrap {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            background: #ffecb3;
+        }
+
+        aside {
+            float: left;
+            width: 30%;
+            height: 700px;
+            background: #ffe082;
+        }
+
+        .article1 {
+            float: left;
+            width: 70%;
+            height: 233px;
+            background: #ffd54f;
+        }
+
+        .article2 {
+            float: left;
+            width: 70%;
+            height: 234px;
+            background: #ffca28;
+        }
+
+        .article3 {
+            float: left;
+            width: 70%;
+            height: 233px;
+            background: #ffc107;
+        }
+
+        footer {
+            clear: both;
+            width: 100%;
+            height: 100px;
+            background: #ffb300;
+        }
+
+        /* 화면 너비 0 - 1200px */
+        @media(max-width: 1220px) {
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            .article1 {
+                height: 350px;
+                background: #ffd54f;
+            }
+
+            .article2 {
+                height: 350px;
+            }
+
+            .article3 {
+                width: 100%;
+            }
+        }
+
+        /* 화면 너비 0 - 768 */
+        @media(max-width: 768px) {
+            aside {
+                width: 100%;
+                height: 300px;
+            }
+
+            .article1 {
+                width: 50%;
+                height: 400px;
+            }
+
+            .article2 {
+                width: 50%;
+                height: 400px;
+            }
+        }
+
+        /* 화면 너비 0 - 480 */
+        @media(max-width: 480px) {
+            aside{
+                height: 400px;
+            }
+            .article1 {
+                width: 100%;
+                height: 300px;
+            }
+
+            .article2 {
+                width: 100%;
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>header</header>
+        <aside>side</aside>
+        <article class='article1'>article1</article>
+        <article class='article2'>article2</article>
+        <article class='article3'>article3</article>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>
